@@ -82,7 +82,7 @@ export default function PricingScreen({ navigation }) {
 
       {/* Continue Button */}
       <View style={styles.buttonContainer}>
-        <TouchableOpacity style={styles.continueButton}>
+        <TouchableOpacity style={styles.continueButton} onPress={() => navigation.navigate("Login")}>
           <Text style={styles.continueButtonText}>Continuer</Text>
         </TouchableOpacity>
       </View>
