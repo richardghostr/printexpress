@@ -32,7 +32,6 @@ const styles = StyleSheet.create({
         color: COLORS.primary,
         textDecorationColor: COLORS.primary,
         textDecorationLine: 'underline',
-        marginVertical: 20,
         alignSelf: 'flex-end',
         fontFamily: 'Poppins-regular'
     }

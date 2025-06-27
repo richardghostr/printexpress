@@ -11,7 +11,7 @@ export default function Form({children}){
 const styles = StyleSheet.create({
     form:{
         marginTop: 10,
-        gap: 15,
+        gap: 10,
         width: '100%',
     },
 });

@@ -1,50 +1,57 @@
-# Welcome to your Expo app 👋
+# PrintExpress
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+PrintExpress est une application mobile qui simplifie la création de compte et l'accès à un service d'impression moderne. L'application propose une expérience utilisateur fluide avec onboarding, inscription multi-étapes et authentification.
 
-## Get started
+## Fonctionnalités actuellement disponibles
 
-1. Install dependencies
+- **Onboarding interactif** : Présentation des avantages de l'application dès le lancement.
+- **Création de compte (inscription multi-étapes)** :
+  - Saisie des informations personnelles (nom, prénom, lieu et date de naissance)
+  - Localisation (ville, institution)
+  - Coordonnées (email, téléphone)
+  - Création et confirmation du mot de passe
+  - Téléversement de documents (CNI/récépissé, photo de profil)
+- **Connexion sécurisée** :
+  - Authentification par email/nom d'utilisateur et mot de passe
+  - Option d'affichage/masquage du mot de passe
+  - Lien pour mot de passe oublié (à implémenter)
+  - Bouton "Continuer avec Google" (intégration à compléter)
+- **Navigation fluide** :
+  - Accueil, onboarding, inscription, connexion
+  - Navigation entre les étapes et gestion de l'état du formulaire
+- **Interface moderne** :
+  - Composants réutilisables (boutons, formulaires, champs de saisie, etc.)
+  - Thème de couleurs et polices personnalisées
+
+## Fonctionnalités prévues mais non encore implémentées
+
+- Commande et gestion d'impressions
+- Paiement en ligne
+- Suivi de commande et notifications
+- Livraison à domicile
+- Gestion du profil utilisateur après inscription
+
+## Installation
+
+1. Installez les dépendances :
 
    ```bash
    npm install
    ```
 
-2. Start the app
+2. Démarrez l'application :
 
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+## Développement
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Modifiez les fichiers dans le dossier **app** pour développer de nouvelles fonctionnalités ou personnaliser l'application. Ce projet utilise le [routing basé sur les fichiers](https://docs.expo.dev/router/introduction).
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## En savoir plus
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- [Documentation Expo](https://docs.expo.dev/)
+- [Tutoriel Expo](https://docs.expo.dev/tutorial/introduction/)
+- [Expo sur GitHub](https://github.com/expo/expo)
+- [Communauté Discord](https://chat.expo.dev)

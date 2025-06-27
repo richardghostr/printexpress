@@ -20,6 +20,7 @@ const styles = StyleSheet.create({
         backgroundColor: COLORS.line,
         paddingLeft: 20,
         fontSize: 15,
+        color: COLORS.primaryText,
         borderRadius: 5,
         fontFamily: 'Poppins-regular'
     }

@@ -26,6 +26,7 @@ const styles = StyleSheet.create({
         width: '100%',
         backgroundColor: COLORS.line,
         paddingLeft: 20,
+        color: COLORS.primaryText,
         fontSize: 15,
         borderRadius: 5,
         fontFamily: 'Poppins-regular'
@@ -35,7 +36,6 @@ const styles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'row',
         height: 50,
-        marginTop: 10,
         position: 'relative',
         borderRadius: 5,
         overflow: 'hidden'

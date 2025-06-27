@@ -1,6 +1,7 @@
 import { useRouter } from "expo-router";
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import Onboarding from "react-native-onboarding-swiper";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import CustomLink from "../components/CustomLink";
 import { COLORS } from '../contants/colors';
 
@@ -43,9 +44,11 @@ const ImageWrapper = ({icon}) => {
     );
 }
 export default function OnboardingScreen(){
+    const insets = useSafeAreaInsets();
+
     return (
         <View
-            style={{flex: 1, backgroundColor: COLORS.backgroundWhite}}
+            style={{flex: 1, backgroundColor: COLORS.backgroundWhite, paddingTop: insets.top, paddingBottom: insets.bottom}}
         >
         <CustomLink href="/authOptions" noLine={false} position="flex-end" horizontal={25} top={25}>Passer</CustomLink>
         <Onboarding 

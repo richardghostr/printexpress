@@ -1,5 +1,6 @@
 export const COLORS = {
     primary: '#0D47A1',
+    btnDisabled: '#0d48a1bc',
     secondary: '#E3F2FD',
     sweetOrange: '#FF7043',
     lightOrange: '#FFE0B2',

@@ -2,7 +2,7 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { Link } from 'expo-router';
 import { StyleSheet, Text } from "react-native";
 import { COLORS } from "../contants/colors";
-export default function LinkButton({name, bgcolor, width, height, top, icon, vertical, horizontal, href}){
+export default function LinkButton({name, bgcolor, width, height, top, icon, vertical, horizontal, href, ...props}){
     return (
     <Link
         style={[
@@ -16,7 +16,7 @@ export default function LinkButton({name, bgcolor, width, height, top, icon, ver
                 borderRadius: height | 50,
                 marginHorizontal: horizontal ? horizontal : 'auto',
             }
-        ]} href={href}>
+        ]} href={href} {...props}>
         <Text style={[styles.buttonLabel, {color: (bgcolor === COLORS.backgroundPrimary) || (bgcolor === COLORS.backgroundWhite) ? COLORS.primaryText : COLORS.backgroundWhite}]}>
             {icon !== '' && 
             <MaterialCommunityIcons 

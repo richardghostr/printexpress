@@ -18,7 +18,7 @@ export default function Index() {
             <View style={[styles.bubble, {right: '-15', height: 150, width: 150, borderRadius: 150, top: '100%', transform: 'translateY(-100%)'}]}></View>
         </View>
         <View style={[styles.bubble, {height: 400, width: 400, borderRadius: 400, backgroundColor: COLORS.secondary, top: '100%', left: '-50%', transform: 'translateY(-200px)'}]}></View>
-        <Button name={"Commençer"} bgcolor={COLORS.primary} width={"90%"} height={60} vertical={70} onPress = {() => router.navigate('/onboarding')}/>
+        <Button name={"Commençer"} bgcolor={COLORS.primary} width={"90%"} height={50} vertical={70} onPress = {() => router.navigate('/onboarding')}/>
     </View>
   );
 }
